@@ -1,19 +1,48 @@
 aid: blink-identity
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blink-identity.png
 name: Blink Identity
-description: Blink Identity is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Blink Identity is an Austin, Texas company building a privacy-first facial-recognition
+  identity platform for live entertainment venues, stadiums, and public spaces. Its
+  "identify-in-motion" machine-vision system lets patrons enroll with a smartphone photo,
+  then walk through touchless entry, pay-with-your-face concessions, and automatic loyalty
+  recognition without stopping to scan a ticket. Facial images are converted into encrypted
+  templates rather than stored as photos, and the company is a Techstars Music alumnus that
+  has partnered with Live Nation / Ticketmaster on facial-recognition ticketing. This profile
+  was surfaced as a Techstars portfolio lead and enriched from the company's public website;
+  Blink Identity does not currently publish a developer-facing API, SDK, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/blink-identity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
+- sinai-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Identity
+- Biometrics
+- Facial Recognition
+- Authentication
+- Live Events
+- Ticketing
+- Payments
+- Privacy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +51,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://blinkidentity.com/
+  url: https://www.blinkidentity.com/
+- type: Blog
+  url: https://www.blinkidentity.com/forum
+- type: PrivacyPolicy
+  url: https://www.blinkidentity.com/privacy-policy
+- type: DomainSecurity
+  url: security/blink-identity-domain-security.yml
+- type: WellKnown
+  url: well-known/blink-identity-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
